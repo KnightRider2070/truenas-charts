@@ -150,6 +150,8 @@ jobs:
           ./charttool buildSCALE
 
       - name: Commit Catalog
+        if: |
+          steps.collect-changes.outputs.changesDetected == 'true'
         run: |
           cd catalog
           git config user.name "TrueNasChartBot"
