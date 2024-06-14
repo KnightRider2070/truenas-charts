@@ -12,25 +12,7 @@
   timezone: "Europe/Amsterdam",
   pinDigests: true,
   automerge: false,
-  gitAuthor: "TrueNasChartBot <truenaschartbot@bytehaven.live>",
-  hostRules: [
-    {
-      hostType: "docker",
-      matchHost: "hub.docker.com",
-      username: "knightrider1",
-      encrypted: {
-        password: "wcFMA/xDdHCJBTolAQ/6AnVJXmS4+maJ5QOD5rDQY0GMeqiS+n3LWsbzAUDDV+F/lHBd30HQQiiUhWnHevAjE5K8NDeM3K6/6Q3zqhMzXvZNvURIIK2+nCqCPduwzl7bTchCjvzZdV0TcOSwd3Cz84bdhin7Tp0882XYv88YVH/khh8cV4avPQ2rytY4RnUiels1yl3dgEWS6vaxlXUQm01LhNwE3fFfTYregXYdKtX1Jl0iWTBjAyxKLrZTHGB7/8t8OxudHq8ayZQF8Dt5PQaPYC5DrjZiRdTOxlNzE8iL6pCItcuTNT0Gp4QLRFJk60w++8Lad72uq5BAYH3DTwkXg11MRKqVq2UTPhVY+rniGGXfOg7b+lnz+N3tWcCyw/YVvNAt5t5Z7oRV3GbhD7dTQVjWq5qcQf5bw3AatRSSB2wpTiG6tp7zlsO/oKbM5UXjcUOznOxacCE9qHMZKF5RKXb/0XeS3NpLJvtUfNZgvtzhlLPqmBAzxrcOfUwcIPoKSvdSQQmqd0xEwuvZzLez+CF6+zGpVdWKI2Rd09jwRPxXb3yikX15iozY1JQ6D5oasRrKqHwXTNYVYXvlEsxmOVKDq3OE1I3RGOzq+MtktQBhJ8c88IzT3pR+h0C/UYasCbK2++5nApLH8UW+wp3S1wq8cQas5uQJuq91fVq0UEHeh9Ein4FHYZPdQcLSdgHI857HKZRnYLWx2rzLGniI0XTlZ8745RV3MYGQLtUgs144XjN4yLCeo1/QIu19fteXzh8V7j4Kc6rHjSstLNK3MNCHY8A6oPlUrZvMdWzWPIEMKh7goMemZvy0uhwjZZ2jk1zOiiwAcq8H7vEjYgx0DyOt/4k"
-      }
-    },
-    {
-      hostType: "docker",
-      matchHost: "docker.io",
-      username: "knightrider1",
-     encrypted: {
-        password: "wcFMA/xDdHCJBTolAQ/6AnVJXmS4+maJ5QOD5rDQY0GMeqiS+n3LWsbzAUDDV+F/lHBd30HQQiiUhWnHevAjE5K8NDeM3K6/6Q3zqhMzXvZNvURIIK2+nCqCPduwzl7bTchCjvzZdV0TcOSwd3Cz84bdhin7Tp0882XYv88YVH/khh8cV4avPQ2rytY4RnUiels1yl3dgEWS6vaxlXUQm01LhNwE3fFfTYregXYdKtX1Jl0iWTBjAyxKLrZTHGB7/8t8OxudHq8ayZQF8Dt5PQaPYC5DrjZiRdTOxlNzE8iL6pCItcuTNT0Gp4QLRFJk60w++8Lad72uq5BAYH3DTwkXg11MRKqVq2UTPhVY+rniGGXfOg7b+lnz+N3tWcCyw/YVvNAt5t5Z7oRV3GbhD7dTQVjWq5qcQf5bw3AatRSSB2wpTiG6tp7zlsO/oKbM5UXjcUOznOxacCE9qHMZKF5RKXb/0XeS3NpLJvtUfNZgvtzhlLPqmBAzxrcOfUwcIPoKSvdSQQmqd0xEwuvZzLez+CF6+zGpVdWKI2Rd09jwRPxXb3yikX15iozY1JQ6D5oasRrKqHwXTNYVYXvlEsxmOVKDq3OE1I3RGOzq+MtktQBhJ8c88IzT3pR+h0C/UYasCbK2++5nApLH8UW+wp3S1wq8cQas5uQJuq91fVq0UEHeh9Ein4FHYZPdQcLSdgHI857HKZRnYLWx2rzLGniI0XTlZ8745RV3MYGQLtUgs144XjN4yLCeo1/QIu19fteXzh8V7j4Kc6rHjSstLNK3MNCHY8A6oPlUrZvMdWzWPIEMKh7goMemZvy0uhwjZZ2jk1zOiiwAcq8H7vEjYgx0DyOt/4k"
-      }
-    },
-  ],
+  gitAuthor: "TrueCharts-Admin <bot@truecharts.org>",
   "helm-values": {
     fileMatch: [
       "charts/.+/.*values\\.yaml$",
@@ -82,6 +64,7 @@
         "charts/system/**",
         "charts/unstable/**",
         "charts/dev/**",
+        "charts/incubator/**",
         "templates/app/**",
       ],
       commitMessageTopic: "Ignored Updates",
@@ -139,7 +122,6 @@
       groupName: "helm general major",
       matchFileNames: [
         "charts/stable/**",
-        "charts/incubator/**",
         "charts/premium/**",
         "charts/system/**",
       ],
@@ -155,7 +137,6 @@
       groupName: "helm general minor",
       matchFileNames: [
         "charts/stable/**",
-        "charts/incubator/**",
         "charts/premium/**",
         // "charts/system/**",
       ],
@@ -170,7 +151,6 @@
       groupName: "helm general non-major",
       matchFileNames: [
         "charts/stable/**",
-        "charts/incubator/**",
         "charts/premium/**",
         // "charts/system/**",
       ],
