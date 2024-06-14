@@ -82,16 +82,6 @@
       autoApprove: false,
     },
     {
-      "matchManagers": ["helmv3"],
-      "matchDatasources": ["helm"],
-      "commitMessageTopic": "Update {{depName}} appVersion",
-      "matchPaths": ["charts/.+/Chart\\.yaml$"],
-      "automerge": false,
-      "separateMajorMinor": true,
-      "separateMinorPatch": true,
-      "automergeType": "pr"
-    },
-    {
       matchDatasources: ["helm"],
       matchUpdateTypes: ["major"],
       automerge: false,
