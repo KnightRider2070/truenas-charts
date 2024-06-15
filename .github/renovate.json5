@@ -650,11 +650,22 @@
  "regexManagers": [
  {
       "fileMatch": [
+        "(^|/)values\\.yaml$"
+      ],
+      "matchStrings": [
+        "tag: (?<currentValue>[\\w+\\.\\-]*)(@.*)?"
+      ],
+      "depNameTemplate": "appVersion",
+      "datasourceTemplate": "docker"
+    },
+    {
+      "fileMatch": [
         "(^|/)Chart\\.yaml$"
       ],
       "matchStrings": [
-        "appVersion:\s*(?<currentValue>[\w+.\-]*)"
+        "appVersion:\\s*(?<currentValue>[\\w+\\.\\-]*)"
       ],
+      "depNameTemplate": "appVersion",
       "datasourceTemplate": "docker"
     }
   ],
