@@ -22,6 +22,7 @@ home: https://truecharts.org/charts/stable/whisparr
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/whisparr.webp
 keywords:
   - whisparr
+  - whisparr2
   - Downloaders
   - MediaApp-Other
 kubeVersion: ">=1.24.0-0"
@@ -29,7 +30,7 @@ maintainers:
   - name: TrueCharts
     email: info@truecharts.org
     url: https://truecharts.org
-name: whisparr
+name: whisparr2
 sources:
   - https://ghcr.io/hotio/whisparr
   - https://github.com/onedr0p/containers/tree/main/apps/whisparr
