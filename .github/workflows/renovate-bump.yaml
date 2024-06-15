@@ -1,11 +1,12 @@
 name: "Renovate: Bump on Push"
 
 on:
-  push:
-    branches:
-      - "renovate/**"
-    tags-ignore:
-      - "**"
+  workflow_run:
+#  push:
+#    branches:
+#      - "renovate/**"
+#    tags-ignore:
+#      - "**"
 
 permissions:
   id-token: write
