@@ -647,4 +647,26 @@
       labels: ["renovate/image", "ci"],
     },
   ],
+"regexManagers": [
+ {
+      "fileMatch": [
+        "(^|/)values\\.yaml$"
+      ],
+      "matchStrings": [
+        "repository: (?<depName>.*?), tag: (?<currentValue>[\\w+\\.\\-]*)(@.*)?"
+      ],
+      "depNameTemplate": "{{depName}}",
+      "datasourceTemplate": "docker"
+    },
+    {
+      "fileMatch": [
+        "(^|/)Chart\\.yaml$"
+      ],
+      "matchStrings": [
+        "appVersion:\\s*(?<currentValue>[\\w+\\.\\-]*)"
+      ],
+      "depNameTemplate": "{{depName}}",
+      "datasourceTemplate": "docker"
+    }
+  ],
 }
