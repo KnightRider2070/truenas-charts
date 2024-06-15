@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 11.3.2
+appVersion: "11.3.2"
 dependencies:
   - name: common
     version: 24.0.1
@@ -32,10 +32,10 @@ maintainers:
     url: https://truecharts.org
 name: mariadb
 sources:
+  - https://github.com/truecharts/charts/tree/master/charts/stable/mariadb
   - https://github.com/bitnami/bitnami-docker-mariadb
   - https://github.com/prometheus/mysqld_exporter
-  - https://github.com/truecharts/charts/tree/master/charts/stable/mariadb
   - https://hub.docker.com/r/bitnami/mariadb
   - https://mariadb.org
 type: application
-version: 15.0.2
+version: 15.0.3
