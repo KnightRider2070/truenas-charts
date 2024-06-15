@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 2.0.0.548
+appVersion: "nightly"
 dependencies:
   - name: common
     version: 24.0.1
@@ -18,8 +18,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: An adult media thingy.
-home: https://truecharts.org/charts/stable/whisparr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/whisparr.webp
+home: https://truecharts.org/charts/stable/whisparr2
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/whisparr2.webp
 keywords:
   - whisparr
   - whisparr2
@@ -32,8 +32,8 @@ maintainers:
     url: https://truecharts.org
 name: whisparr2
 sources:
+  - https://github.com/truecharts/charts/tree/master/charts/stable/whisparr2
   - https://ghcr.io/hotio/whisparr
   - https://github.com/onedr0p/containers/tree/main/apps/whisparr
-  - https://github.com/truecharts/charts/tree/master/charts/stable/whisparr
 type: application
-version: 12.0.1
+version: 12.0.2
