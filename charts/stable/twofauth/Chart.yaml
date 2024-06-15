@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 5.2.0
+appVersion: "5.2.0"
 dependencies:
   - name: common
     version: 24.0.1
@@ -30,8 +30,8 @@ maintainers:
     url: https://truecharts.org
 name: twofauth
 sources:
-  - https://github.com/Bubka/2fauth
   - https://github.com/truecharts/charts/tree/master/charts/stable/twofauth
+  - https://github.com/Bubka/2fauth
   - https://hub.docker.com/r/2fauth/2fauth
 type: application
-version: 3.0.1
+version: 3.0.2
