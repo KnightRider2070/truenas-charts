@@ -1,8 +1,4 @@
----
-title: TrueCharts FORK, just to keep updates rolling
----
-
-**Community Helm Chart Catalog**
+**TrueCharts FORK, just to keep updates rolling**
 
 [![docs](https://img.shields.io/badge/docs-rtfm-yellow?logo=gitbook&logoColor=white&style=for-the-badge)](https://truecharts.org/)
 [![Discord](https://img.shields.io/badge/discord-chat-7289DA.svg?maxAge=60&style=for-the-badge)](https://discord.gg/Js6xv9nGuU)
