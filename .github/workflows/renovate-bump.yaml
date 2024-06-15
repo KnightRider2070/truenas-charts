@@ -34,7 +34,7 @@ jobs:
           fetch-depth: 0
           ref: master
           path: master
-          
+
       - name: Setting repo parent dir as safe safe.directory
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
@@ -86,8 +86,6 @@ jobs:
               tag="${tag%.}"
               echo "Updating tag of ${chartname} to ${tag}..."
               sed -i -e "s|appVersion: .*|appVersion: \"${tag}\"|" "${chart}/Chart.yaml"
-              echo "Updating icon of ${chartname}..."
-              sed -i -e "s|icon: .*|icon: https:\/\/truecharts.org\/img\/hotlink-ok\/chart-icons\/${chartname}.webp|" "${chart}/Chart.yaml"
               echo "Updating home of ${chartname}..."
               sed -i -e "s|home: .*|home: https:\/\/truecharts.org\/charts\/${train}\/${chartname}|" "${chart}/Chart.yaml"
               echo "Attempting to update sources of ${chartname}..."
@@ -159,3 +157,6 @@ jobs:
           git config user.email "truenaschartbot@bytehaven.live"
           git add --all
           git diff --quiet && git diff --staged --quiet || (git commit -sm "Commit bumped Chart Version" && git push)
+
+#echo "Updating icon of ${chartname}..."
+#sed -i -e "s|icon: .*|icon: https:\/\/truecharts.org\/img\/hotlink-ok\/chart-icons\/${chartname}.webp|" "${chart}/Chart.yaml"
