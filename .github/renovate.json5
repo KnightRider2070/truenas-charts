@@ -653,15 +653,11 @@
       matchStrings: [
         "image:\\s{\\srepository:\\s[\"']?(?<depName>[\\w\\-\\/]+)[\"']?\\s*,\\stag:\\s[\"']?(?<newValue>[\\w+\\.\\-]+)[\"']?\\s*}"
       ],
-      depNameTemplate: "{{depName}}",
-      datasourceTemplate: "docker"
     },
     {
       matchDatasources: ["docker"],
       matchPackagePatterns: ["(^|/)chart\\.yaml$"],
       matchStrings: ["appVersion:\\s*(?<currentValue>[\\w+\\.\\-]*)"],
-      depNameTemplate: "{{currentValue}}",
-      datasourceTemplate: "docker"
     },
   ],
 }
