@@ -648,31 +648,17 @@
       labels: ["renovate/image", "ci"],
     },
      {
-    "matchManagers": ["regex"],
-    "fileMatch": ["(^|/)values\\.yaml$"],
-    "matchStrings": ["repository:\\s*(?<depName>[\\w\\/\\-]+)\\s*tag:\\s*(?<currentValue>[\\w+\\.\\-]+)(@.*?)?"],
-    "depNameTemplate": "{{depName}}",
-    "datasourceTemplate": "docker"
-  },
-  {
-    "matchManagers": ["regex"],
-    "fileMatch": ["(^|/)Chart\\.yaml$"],
-    "matchStrings": ["appVersion:\\s*(?<currentValue>[\\w+\\.\\-]*)"],
-    "depNameTemplate": "appVersion",
-    "datasourceTemplate": "docker"
-  }
-  ],
-  "regexManagers": [
-    {
+      "matchManagers": ["regex"],
       "fileMatch": ["(^|/)values\\.yaml$"],
       "matchStrings": [
-        "repository:\\s*(?<depName>[\\w\\-\\/]+)\\s*\\n\\s*tag:\\s*(?<currentValue>[\\w+\\.\\-]+)(@.*?)?"
+        "image:\\s*{\\s*repository:\\s*[\"']?(?<depName>[\\w\\-\\/]+)[\"']?\\s*,\\s*tag:\\s*[\"']?(?<newValue>[\\w+\\.\\-]+)[\"']?\\s*}"
       ],
       "depNameTemplate": "{{depName}}",
       "datasourceTemplate": "docker"
     },
     {
-      "fileMatch": ["(^|/)Chart\\.yaml$"],
+      "matchManagers": ["regex"],
+      "fileMatch": ["(^|/)chart\\.yaml$"],
       "matchStrings": ["appVersion:\\s*(?<currentValue>[\\w+\\.\\-]*)"],
       "depNameTemplate": "appVersion",
       "datasourceTemplate": "docker"
