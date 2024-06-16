@@ -83,18 +83,6 @@
       autoApprove: false,
     },
     {
-      "matchDatasources": ["helm"],
-      "bump": {
-        "commitMessage": "chore: bump chart version to {{newVersion}}"
-      },
-      "template": {
-        "transform": "yaml",
-        "src": "Chart.yaml",
-        "bump": "version: (.+)",
-        "replaceString": "version: {{newVersion}}"
-      }
-    },
-    {
       matchDatasources: ["helm"],
       matchUpdateTypes: ["major"],
       automerge: false,
@@ -659,17 +647,5 @@
       matchUpdateTypes: ["major", "minor", "patch", "digest", "pin"],
       labels: ["renovate/image", "ci"],
     },
-    {
-       matchDatasources: ["docker"],
-      matchPackagePatterns: ["(^|/)values\\.yaml$"],
-      matchStrings: [
-        "image:\\s{\\srepository:\\s[\"']?(?<depName>[\\w\\-\\/]+)[\"']?\\s*,\\stag:\\s[\"']?(?<newValue>[\\w+\\.\\-]+)[\"']?\\s*}"
-      ],
-    },
-    {
-      matchDatasources: ["docker"],
-      matchPackagePatterns: ["(^|/)chart\\.yaml$"],
-      matchStrings: ["appVersion:\\s*(?<currentValue>[\\w+\\.\\-]*)"],
-    },
-  ],
+]
 }
