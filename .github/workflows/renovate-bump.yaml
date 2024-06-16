@@ -153,8 +153,8 @@ jobs:
           rm -rf master
       - name: Commit and Push new version
         run: |
-          git config user.name "TrueNasChartBot "
-          git config user.email "truenaschartbot@bytehaven.live"
+          git config user.name "TrueNasChart-Bot"
+          git config user.email "bot@bytehaven.live"
           git add --all
           git diff --quiet && git diff --staged --quiet || (git commit -sm "Commit bumped Chart Version" && git push)
 
