@@ -12,7 +12,8 @@
   timezone: "Europe/Amsterdam",
   pinDigests: true,
   automerge: false,
-  gitAuthor: "TrueCharts-Admin <bot@truecharts.org>",
+  gitAuthor: "TrueNasCharts-Bot <bot@bytehaven.live>",
+  gitIgnoredAuthors: ["bot@bytehaven.live"]
   "helm-values": {
     fileMatch: [
       "charts/.+/.*values\\.yaml$",
