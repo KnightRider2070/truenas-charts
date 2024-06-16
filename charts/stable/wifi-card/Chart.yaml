@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: latest
+appVersion: "latest"
 dependencies:
   - name: common
     version: 24.0.1
@@ -30,8 +30,8 @@ maintainers:
     url: https://truecharts.org
 name: wifi-card
 sources:
-  - https://github.com/bndw/wifi-card
   - https://github.com/truecharts/charts/tree/master/charts/stable/wifi-card
+  - https://github.com/bndw/wifi-card
   - https://hub.docker.com/r/bndw/wifi-card
 type: application
-version: 7.0.2
+version: 7.0.3
