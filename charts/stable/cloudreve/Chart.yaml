@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 3.8.3
+appVersion: "3.8.3"
 dependencies:
   - name: common
     version: 24.0.1
@@ -31,8 +31,8 @@ maintainers:
     url: https://truecharts.org
 name: cloudreve
 sources:
-  - https://github.com/cloudreve/Cloudreve
   - https://github.com/truecharts/charts/tree/master/charts/stable/cloudreve
+  - https://github.com/cloudreve/Cloudreve
   - https://hub.docker.com/r/cloudreve/cloudreve
 type: application
-version: 8.0.1
+version: 8.0.2
