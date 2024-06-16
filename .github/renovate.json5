@@ -647,11 +647,18 @@
       matchUpdateTypes: ["major", "minor", "patch", "digest", "pin"],
       labels: ["renovate/image", "ci"],
     },
+    {
+      // Custom regex managers
+      "matchManagers": ["regexManagers"],
+      "automerge": true,
+      "groupName": "Custom Regex Dependencies",
+      "labels": ["regex"]
+    }
   ],
 "regexManagers": [
   {
     "fileMatch": ["(^|/)values\\.yaml$"],
-    "matchStrings": ["repository: (?<depName>.?), tag: (?<currentValue>[\\w+\\.\\-]*)(@.*)?"],
+    "matchStrings": ["repository: (?<depName>.*?), tag: (?<currentValue>[\\w+\\.\\-]+)(@.*?)?"],
     "depNameTemplate": "{{depName}}",
     "datasourceTemplate": "docker"
   },
@@ -662,11 +669,4 @@
     "datasourceTemplate": "docker"
   }
 ],
-"packageRules": [
-  {
-    "matchManagers": ["regex"],
-    "matchPackageNames": ["appVersion"],
-    "newVersion": "{{#if isSingleVersion}}{{{newVersion}}}{{else}}{{{newVersion}}}{{/if}}"
-  }
-]
 }
