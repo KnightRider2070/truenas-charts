@@ -13,7 +13,7 @@
   pinDigests: true,
   automerge: false,
   gitAuthor: "TrueNasCharts-Bot <bot@bytehaven.live>",
-  gitIgnoredAuthors: ["bot@bytehaven.live"]
+  gitIgnoredAuthors: ["bot@bytehaven.live"],
   "helm-values": {
     fileMatch: [
       "charts/.+/.*values\\.yaml$",
