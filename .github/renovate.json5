@@ -648,7 +648,7 @@
       labels: ["renovate/image", "ci"],
     },
     {
-      "matchManagers": ["helm"],
+      "matchManagers": ["helmv3"],
       "matchPackagePatterns": ["(^|/)values\\.yaml$"],
       "matchStrings": [
         "image:\\s{\\srepository:\\s[\"']?(?<depName>[\\w\\-\\/]+)[\"']?\\s*,\\stag:\\s[\"']?(?<newValue>[\\w+\\.\\-]+)[\"']?\\s*}"
@@ -657,7 +657,7 @@
       "datasourceTemplate": "docker"
     },
     {
-      "matchManagers": ["helm"],
+      "matchManagers": ["helmv3"],
       "matchPackagePatterns": ["(^|/)chart\\.yaml$"],
       "matchStrings": ["appVersion:\\s*(?<currentValue>[\\w+\\.\\-]*)"],
       "depNameTemplate": "{{currentValue}}",
