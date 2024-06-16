@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: latest
+appVersion: "latest"
 dependencies:
   - name: common
     version: 24.0.1
@@ -30,9 +30,9 @@ maintainers:
     url: https://truecharts.org
 name: tt-rss
 sources:
-  - https://git.tt-rss.org/fox/tt-rss
   - https://github.com/truecharts/charts/tree/master/charts/stable/tt-rss
+  - https://git.tt-rss.org/fox/tt-rss
   - https://hub.docker.com/r/cthulhoo/ttrss-fpm-pgsql-static
   - https://hub.docker.com/r/cthulhoo/ttrss-web-nginx
 type: application
-version: 18.0.6
+version: 18.0.7
