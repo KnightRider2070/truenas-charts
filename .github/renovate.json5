@@ -648,12 +648,19 @@
       labels: ["renovate/image", "ci"],
     },
     {
-      // Custom regex managers
-      "matchManagers": ["regexManagers"],
-      "automerge": true,
-      "groupName": "Custom Regex Dependencies",
-      "labels": ["regex"]
-    }
+    "matchManagers": ["regex"],
+    "fileMatch": ["(^|/)values\\.yaml$"],
+    "matchStrings": ["repository: (?<depName>.*?), tag: (?<currentValue>[\\w+\\.\\-]+)(@.*?)?"],
+    "depNameTemplate": "{{depName}}",
+    "datasourceTemplate": "docker"
+  },
+  {
+    "matchManagers": ["regex"],
+    "fileMatch": ["(^|/)Chart\\.yaml$"],
+    "matchStrings": ["appVersion:\\s*(?<currentValue>[\\w+\\.\\-]*)"],
+    "depNameTemplate": "appVersion",
+    "datasourceTemplate": "docker"
+  }
   ],
 "regexManagers": [
   {
