@@ -647,10 +647,10 @@
       matchUpdateTypes: ["major", "minor", "patch", "digest", "pin"],
       labels: ["renovate/image", "ci"],
     },
-    {
+     {
     "matchManagers": ["regex"],
     "fileMatch": ["(^|/)values\\.yaml$"],
-    "matchStrings": ["repository: (?<depName>.*?), tag: (?<currentValue>[\\w+\\.\\-]+)(@.*?)?"],
+    "matchStrings": ["repository:\\s*(?<depName>[\\w\\/\\-]+)\\s*tag:\\s*(?<currentValue>[\\w+\\.\\-]+)(@.*?)?"],
     "depNameTemplate": "{{depName}}",
     "datasourceTemplate": "docker"
   },
