@@ -1,7 +1,7 @@
 image:
   repository: gaseousgames/gaseousserver
   pullPolicy: IfNotPresent
-  tag: v1.7.3@sha256:a1016222d7e5ec75b1039dbb314d39efd64084c3bb03e117958027f53f61f86f
+  tag: v1.7.3@sha256:9979a50d1d7365c7ecc0bf965e24e25324563fb6b58ecd7cde80d53cc37fda25
 
 securityContext:
   container:
