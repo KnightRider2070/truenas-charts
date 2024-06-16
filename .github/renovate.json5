@@ -647,21 +647,21 @@
       matchUpdateTypes: ["major", "minor", "patch", "digest", "pin"],
       labels: ["renovate/image", "ci"],
     },
-     {
-  "matchManagers": ["docker"],
-  "matchPackagePatterns": ["(^|/)values\\.yaml$"],
-  "matchStrings": [
-    "image:\\s{\\srepository:\\s[\"']?(?<depName>[\\w\\-\\/]+)[\"']?\\s*,\\stag:\\s[\"']?(?<newValue>[\\w+\\.\\-]+)[\"']?\\s*}"
-  ],
-  "depNameTemplate": "{{depName}}",
-  "datasourceTemplate": "docker"
-},
-{
-  "matchManagers": ["docker"],
-  "matchPackagePatterns": ["(^|/)chart\\.yaml$"],
-  "matchStrings": ["appVersion:\\s*(?<currentValue>[\\w+\\.\\-]*)"],
-  "depNameTemplate": "{{currentValue}}",
-  "datasourceTemplate": "docker"
-},
+    {
+      "matchManagers": ["helm"],
+      "matchPackagePatterns": ["(^|/)values\\.yaml$"],
+      "matchStrings": [
+        "image:\\s{\\srepository:\\s[\"']?(?<depName>[\\w\\-\\/]+)[\"']?\\s*,\\stag:\\s[\"']?(?<newValue>[\\w+\\.\\-]+)[\"']?\\s*}"
+      ],
+      "depNameTemplate": "{{depName}}",
+      "datasourceTemplate": "docker"
+    },
+    {
+      "matchManagers": ["helm"],
+      "matchPackagePatterns": ["(^|/)chart\\.yaml$"],
+      "matchStrings": ["appVersion:\\s*(?<currentValue>[\\w+\\.\\-]*)"],
+      "depNameTemplate": "{{currentValue}}",
+      "datasourceTemplate": "docker"
+    },
   ],
 }
