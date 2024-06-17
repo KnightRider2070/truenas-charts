@@ -5,7 +5,7 @@ image:
 ffmpegImage:
   repository: docker.io/localai/localai
   pullPolicy: IfNotPresent
-  tag: v2.16.0-ffmpeg-core@sha256:0a3c62f2a28d7a3ca233ad6c77af750540c62ab8a0bb3d04f15943845a4c2b50
+  tag: v2.16.0-ffmpeg-core@sha256:452969a49bc770873ca7dfeb7d75e06dac1e6b30e30247ca538a68fd19338cb6
 cublasCuda12Image:
   repository: docker.io/localai/localai
   pullPolicy: IfNotPresent
