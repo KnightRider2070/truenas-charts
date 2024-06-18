@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: latest
+appVersion: "latest"
 dependencies:
   - name: common
     version: 24.0.1
@@ -32,8 +32,8 @@ maintainers:
     url: https://truecharts.org
 name: twonky-server
 sources:
-  - https://github.com/H2CK/twonkyserver
   - https://github.com/truecharts/charts/tree/master/charts/stable/twonky-server
+  - https://github.com/H2CK/twonkyserver
   - https://hub.docker.com/r/dtjs48jkt/twonkyserver
 type: application
-version: 7.0.1
+version: 7.0.2
