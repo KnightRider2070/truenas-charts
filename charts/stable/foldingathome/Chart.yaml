@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 7.6.21
+appVersion: "7.6.21"
 dependencies:
   - name: common
     version: 24.0.1
@@ -29,7 +29,7 @@ maintainers:
     url: https://truecharts.org
 name: foldingathome
 sources:
-  - https://ghcr.io/linuxserver/foldingathome
   - https://github.com/truecharts/charts/tree/master/charts/stable/foldingathome
+  - https://ghcr.io/linuxserver/foldingathome
 type: application
-version: 11.0.2
+version: 11.0.3
