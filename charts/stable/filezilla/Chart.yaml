@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 3.67.0
+appVersion: "3.67.0"
 dependencies:
   - name: common
     version: 24.0.1
@@ -33,9 +33,9 @@ maintainers:
     url: https://truecharts.org
 name: filezilla
 sources:
+  - https://github.com/truecharts/charts/tree/master/charts/stable/filezilla
   - https://filezilla-project.org/
   - https://ghcr.io/linuxserver/filezilla
   - https://github.com/linuxserver/docker-filezilla
-  - https://github.com/truecharts/charts/tree/master/charts/stable/filezilla
 type: application
-version: 13.0.3
+version: 13.0.4
