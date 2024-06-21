@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: latest
+appVersion: "latest"
 dependencies:
   - name: common
     version: 24.0.1
@@ -30,9 +30,9 @@ maintainers:
     url: https://truecharts.org
 name: lazylibrarian
 sources:
-  - https://ghcr.io/linuxserver/lazylibrarian
   - https://github.com/truecharts/charts/tree/master/charts/stable/lazylibrarian
+  - https://ghcr.io/linuxserver/lazylibrarian
   - https://gitlab.com/LazyLibrarian/LazyLibrarian.git
   - https://lazylibrarian.gitlab.io
 type: application
-version: 20.0.5
+version: 20.0.6
