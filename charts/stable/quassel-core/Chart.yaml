@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 0.14.0
+appVersion: "0.14.0"
 dependencies:
   - name: common
     version: 24.0.1
@@ -29,7 +29,7 @@ maintainers:
     url: https://truecharts.org
 name: quassel-core
 sources:
-  - https://ghcr.io/linuxserver/quassel-core
   - https://github.com/truecharts/charts/tree/master/charts/stable/quassel-core
+  - https://ghcr.io/linuxserver/quassel-core
 type: application
-version: 13.0.1
+version: 13.0.2
