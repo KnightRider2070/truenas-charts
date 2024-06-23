@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: latest
+appVersion: "latest"
 dependencies:
   - name: common
     version: 24.0.1
@@ -30,8 +30,8 @@ maintainers:
     url: https://truecharts.org
 name: grafana-image-renderer
 sources:
-  - https://github.com/grafana/grafana-image-renderer/blob/master/docs/remote_rendering_using_docker.md
   - https://github.com/truecharts/charts/tree/master/charts/stable/grafana-image-renderer
+  - https://github.com/grafana/grafana-image-renderer/blob/master/docs/remote_rendering_using_docker.md
   - https://hub.docker.com/r/grafana/grafana-image-renderer
 type: application
-version: 7.0.1
+version: 7.0.2
