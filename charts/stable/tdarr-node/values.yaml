@@ -1,7 +1,7 @@
 image:
   repository: haveagitgat/tdarr_node
   pullPolicy: IfNotPresent
-  tag: 2.20.01@sha256:258a1abfcdf1e15c75bf0ef94e2689bbf3d48514de171f70eef07cbd33254f16
+  tag: 2.20.01@sha256:1e3e2a151170c6df7f826141111ad4a7341627a329e6d96197ccb0f85a016cc9
 service:
   main:
     enabled: false
