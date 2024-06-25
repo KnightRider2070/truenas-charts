@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 17.0.0
+appVersion: "17.0"
 dependencies:
   - name: common
     version: 24.0.1
@@ -35,8 +35,8 @@ maintainers:
     url: https://truecharts.org
 name: odoo
 sources:
-  - https://github.com/odoo/docker
   - https://github.com/truecharts/charts/tree/master/charts/stable/odoo
+  - https://github.com/odoo/docker
   - https://hub.docker.com/_/odoo
 type: application
-version: 19.0.7
+version: 19.0.8
