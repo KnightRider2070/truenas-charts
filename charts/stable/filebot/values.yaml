@@ -1,6 +1,6 @@
 image:
   repository: jlesage/filebot
-  tag: v24.06.1@sha256:470ec64fafb85b5482b7f9f3a99e7440fc6ae494178d3b5ce0621d35a5206b0e
+  tag: v24.06.1@sha256:54f01a7ea71e188f6e1f2a4c6703710fbc4f1ad36240a0ab5b37fc4e808acfd6
   pullPolicy: IfNotPresent
 securityContext:
   container:
