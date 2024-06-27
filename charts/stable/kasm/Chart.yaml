@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 1.15.1
+appVersion: "1.15.1"
 dependencies:
   - name: common
     version: 24.0.1
@@ -30,10 +30,10 @@ maintainers:
     url: https://truecharts.org
 name: kasm
 sources:
+  - https://github.com/truecharts/charts/tree/master/charts/stable/kasm
   - https://github.com/linuxserver/docker-kasm#readme
   - https://github.com/orgs/linuxserver/packages/container/package/kasm
-  - https://github.com/truecharts/charts/tree/master/charts/stable/kasm
   - https://hub.docker.com/r/kasmweb/workspaces
   - https://www.kasmweb.com/
 type: application
-version: 10.0.1
+version: 10.0.2
