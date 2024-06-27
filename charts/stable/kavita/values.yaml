@@ -1,7 +1,7 @@
 image:
   repository: jvmilazz0/kavita
   pullPolicy: IfNotPresent
-  tag: 0.8.1@sha256:7d7d7b1e07d944fdbc77d214d8858a32ce302e136a25a32b938c20a1d0099ed6
+  tag: 0.8.1@sha256:afb2904c41006332f6bf9c5bca52990b6b76039ddace73c2fda4413c39972f28
 securityContext:
   container:
     readOnlyRootFilesystem: false
