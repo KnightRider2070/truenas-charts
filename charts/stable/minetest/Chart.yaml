@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 5.8.0
+appVersion: "5.8.0"
 dependencies:
   - name: common
     version: 24.0.1
@@ -29,7 +29,7 @@ maintainers:
     url: https://truecharts.org
 name: minetest
 sources:
-  - https://ghcr.io/linuxserver/minetest
   - https://github.com/truecharts/charts/tree/master/charts/stable/minetest
+  - https://ghcr.io/linuxserver/minetest
 type: application
-version: 10.0.2
+version: 10.0.3
