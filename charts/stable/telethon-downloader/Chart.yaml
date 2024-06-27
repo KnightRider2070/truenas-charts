@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: latest
+appVersion: "latest"
 dependencies:
   - name: common
     version: 24.0.1
@@ -30,8 +30,8 @@ maintainers:
     url: https://truecharts.org
 name: telethon-downloader
 sources:
-  - https://docs.telethon.dev/
   - https://github.com/truecharts/charts/tree/master/charts/stable/telethon-downloader
+  - https://docs.telethon.dev/
   - https://hub.docker.com/r/jsavargas/telethon_downloader
 type: application
-version: 7.0.1
+version: 7.0.2
