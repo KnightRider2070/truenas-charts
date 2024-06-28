@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/linuxserver/fleet
   pullPolicy: IfNotPresent
-  tag: 2.3.3@sha256:305c90fadb94e196d07f7aeb3d0acd736e74bed641ee91ef3abd89016de62c75
+  tag: 2.3.3@sha256:7f03f5b5bdd471163771412f6eb966e8637f943f404ac647da73fa6fabb0930c
 securityContext:
   container:
     runAsNonRoot: false
