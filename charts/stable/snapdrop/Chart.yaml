@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: latest
+appVersion: "latest"
 dependencies:
   - name: common
     version: 24.0.1
@@ -29,8 +29,8 @@ maintainers:
     url: https://truecharts.org
 name: snapdrop
 sources:
-  - https://github.com/linuxserver/docker-snapdrop
   - https://github.com/truecharts/charts/tree/master/charts/stable/snapdrop
+  - https://github.com/linuxserver/docker-snapdrop
   - https://hub.docker.com/r/linuxserver/snapdrop
 type: application
-version: 11.0.1
+version: 11.0.2
