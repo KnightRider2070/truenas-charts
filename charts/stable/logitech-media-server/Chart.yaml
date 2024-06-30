@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: stable
+appVersion: "stable"
 dependencies:
   - name: common
     version: 24.0.1
@@ -32,8 +32,8 @@ maintainers:
     url: https://truecharts.org
 name: logitech-media-server
 sources:
-  - https://github.com/Logitech/slimserver
   - https://github.com/truecharts/charts/tree/master/charts/stable/logitech-media-server
+  - https://github.com/Logitech/slimserver
   - https://hub.docker.com/r/lmscommunity/logitechmediaserver
 type: application
-version: 13.0.4
+version: 13.0.5
