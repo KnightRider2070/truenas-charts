@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/linuxserver/librespeed
-  tag: 5.3.3@sha256:c646718b6f11c991d63531bbd743cb1f809a8e04460cac17b7eaff96436d5853
+  tag: 5.3.3@sha256:fcaca892147fa2fb4d3071fc6d8a6726d28555bc2cb404955440646f342dfcce
   pullPolicy: IfNotPresent
 service:
   main:
