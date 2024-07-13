@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/linuxserver/firefox
   pullPolicy: IfNotPresent
-  tag: 126.0.1@sha256:8597fdd03f2558549fa1f2a251bf4832d959f09aad97616ec2cf9d86ccce6c09
+  tag: 126.0.1@sha256:b9eb0a238bf941a65674bf97287e14c6cbe31e361af1d9426857213e58a3b179
 securityContext:
   container:
     readOnlyRootFilesystem: false
