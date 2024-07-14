@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: latest
+appVersion: "latest"
 dependencies:
   - name: common
     version: 24.0.1
@@ -32,9 +32,9 @@ maintainers:
     url: https://truecharts.org
 name: tubesync
 sources:
+  - https://github.com/truecharts/charts/tree/master/charts/stable/tubesync
   - https://ghcr.io/meeb/tubesync
   - https://github.com/meeb/tubesync
-  - https://github.com/truecharts/charts/tree/master/charts/stable/tubesync
   - https://registry.hub.docker.com/r/ghcr.io/meeb/tubesync
 type: application
-version: 7.0.1
+version: 7.0.2
