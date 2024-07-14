@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/linuxserver/resilio-sync
-  tag: 2.8.1@sha256:55fb2e33225da83ad2e22e4b0ce2cc128089402858865a1e32d25d3afdb43230
+  tag: 2.8.1@sha256:45354957dd08eeff28c68202d1c135b3e43340cf2af1125ee2b422d85d0fe38c
   pullPolicy: IfNotPresent
 service:
   main:
