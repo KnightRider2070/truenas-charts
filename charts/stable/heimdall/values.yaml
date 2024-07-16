@@ -1,6 +1,6 @@
 image:
   repository: linuxserver/heimdall
-  tag: 2.6.1@sha256:6546ec35a230fb15ad26676a27fdc1b07d1ace14ee1f27235bd6884c09af88a3
+  tag: 2.6.1@sha256:2e787279130c3f359eb8e09c7e131d258267b58fe61ea173cb2172eb865e29c1
   pullPolicy: IfNotPresent
 service:
   main:
