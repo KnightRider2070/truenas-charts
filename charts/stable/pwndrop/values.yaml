@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/linuxserver/pwndrop
   pullPolicy: IfNotPresent
-  tag: 1.0.1@sha256:a3773b2cac2dc34bd778475069df6ccbb0d81e4169920dcfdf59f7b30d304864
+  tag: 1.0.1@sha256:5ec734be85ac97f0189bd41b7f8b2f029cae1ec65447d9d9405a0dec1918f713
 service:
   main:
     ports:
