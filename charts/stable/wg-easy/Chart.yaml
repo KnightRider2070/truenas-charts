@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 13.0.0
+appVersion: "13"
 dependencies:
   - name: common
     version: 24.0.1
@@ -31,7 +31,7 @@ maintainers:
     url: https://truecharts.org
 name: wg-easy
 sources:
-  - https://ghcr.io/wg-easy/wg-easy
   - https://github.com/truecharts/charts/tree/master/charts/stable/wg-easy
+  - https://ghcr.io/wg-easy/wg-easy
 type: application
-version: 15.0.1
+version: 15.0.2
