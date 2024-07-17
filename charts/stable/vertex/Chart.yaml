@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: stable
+appVersion: "stable"
 dependencies:
   - name: common
     version: 24.0.1
@@ -35,4 +35,4 @@ sources:
   - https://gitlab.lswl.in/lswl/vertex
   - https://hub.docker.com/r/lswl/vertex
 type: application
-version: 7.0.1
+version: 7.0.2
