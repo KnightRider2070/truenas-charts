@@ -1,6 +1,6 @@
 image:
   repository: foxxmd/multi-scrobbler
-  tag: latest@sha256:2f1260be0058844771b0432eec7576b46be40c81ad4b3a781f80feef62a3df23
+  tag: latest@sha256:116955d23d42bd2dbe0d8780424ae1eb7d4623eb2fb3f80292cb1d9c015801f6
   pullPolicy: IfNotPresent
 
 securityContext:
