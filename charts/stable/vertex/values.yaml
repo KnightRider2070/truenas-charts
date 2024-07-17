@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: lswl/vertex
-  tag: stable@sha256:0433715c2099a4909e0108058d78c4829a89cea316b605cfbb73274fa9cef9e4
+  tag: stable@sha256:cde87491acc0b53de1355a115cb7075d8ee1edfcf115b20e3d827a03bb359f80
 persistence:
   config:
     enabled: true
