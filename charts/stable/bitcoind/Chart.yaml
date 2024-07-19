@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: latest
+appVersion: "latest"
 dependencies:
   - name: common
     version: 24.0.1
@@ -33,8 +33,8 @@ maintainers:
     url: https://truecharts.org
 name: bitcoind
 sources:
-  - https://bitcoin.org/
   - https://github.com/truecharts/charts/tree/master/charts/stable/bitcoind
+  - https://bitcoin.org/
   - https://hub.docker.com/r/ofawx/bitcoind
 type: application
-version: 7.0.1
+version: 7.0.2
