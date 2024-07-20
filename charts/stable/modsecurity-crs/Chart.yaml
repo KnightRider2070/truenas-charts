@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 3.3.4
+appVersion: "3.3.4-apac"
 dependencies:
   - name: common
     version: 24.0.1
@@ -31,8 +31,8 @@ maintainers:
     url: https://truecharts.org
 name: modsecurity-crs
 sources:
-  - https://github.com/coreruleset/modsecurity-crs-docker
   - https://github.com/truecharts/charts/tree/master/charts/stable/modsecurity-crs
+  - https://github.com/coreruleset/modsecurity-crs-docker
   - https://hub.docker.com/r/owasp/modsecurity-crs
 type: application
-version: 5.0.1
+version: 5.0.2
