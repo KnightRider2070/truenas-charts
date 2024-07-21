@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 1.9.9
+appVersion: "1.9.9"
 dependencies:
   - name: common
     version: 24.0.1
@@ -32,4 +32,4 @@ sources:
   - https://github.com/truecharts/charts/tree/master/charts/stable/hedgedoc
   - https://quay.io/hedgedoc/hedgedoc
 type: application
-version: 14.0.1
+version: 14.0.2
