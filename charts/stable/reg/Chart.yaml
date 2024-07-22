@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 2.0.0
+appVersion: "2"
 dependencies:
   - name: common
     version: 24.0.1
@@ -29,9 +29,9 @@ maintainers:
     url: https://truecharts.org
 name: reg
 sources:
+  - https://github.com/truecharts/charts/tree/master/charts/stable/reg
   - https://github.com/genuinetools/reg
   - https://github.com/k8s-at-home/container-images/
-  - https://github.com/truecharts/charts/tree/master/charts/stable/reg
   - https://hub.docker.com/_/registry
 type: application
-version: 15.0.1
+version: 15.0.2
