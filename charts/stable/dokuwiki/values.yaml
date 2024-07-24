@@ -1,7 +1,7 @@
 image:
   repository: bitnami/dokuwiki
   pullPolicy: IfNotPresent
-  tag: 20240206.1.0@sha256:f7be2f151520663fcba4e431b7130f3a9594f08070b3f750526c93d9cd80a1c7
+  tag: 20240206.1.0@sha256:eeeb5427bcb095dede7d43be28fca32e2087ddb986c31b7294e81d5c9eaef309
 securityContext:
   container:
     runAsNonRoot: false
