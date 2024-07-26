@@ -39,4 +39,4 @@ sources:
   - https://hub.docker.com/_/registry
   - https://registry.hub.docker.com/_/registry/
 type: application
-version: 7.0.2
+version: 7.0.3
