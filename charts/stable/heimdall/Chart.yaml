@@ -33,4 +33,4 @@ sources:
   - https://github.com/linuxserver/Heimdall/
   - https://hub.docker.com/r/linuxserver/heimdall
 type: application
-version: 22.0.4
+version: 22.0.5
