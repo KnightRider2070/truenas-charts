@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: splunk/splunk
-  tag: 9.2.1@sha256:d227c115966cfc6fbb6e5a39fffc3a3b535d885ed268851ce57cdd3f2ad195da
+  tag: 9.2.1@sha256:e4c5b5c9246715c30909d3bbf06d244b0814b84b1420ad817640c8853c19bc47
 
 securityContext:
   container:
