@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: tomsquest/docker-radicale
-  tag: 3.2.1.0@sha256:7facc045f1e15168a0013be17025dd20ff4735f52c91b3d954aa6cefefeeb3a4
+  tag: 3.2.1.0@sha256:4ff29ef91cf4db4f89c4cd0139907bf7eb223d54f123efd7759390a55cdd4df0
 
 securityContext:
   container:
