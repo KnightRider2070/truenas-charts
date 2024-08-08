@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 2.1.6
+appVersion: "2.1.6"
 dependencies:
   - name: common
     version: 24.0.1
@@ -30,8 +30,8 @@ maintainers:
     url: https://truecharts.org
 name: requestrr
 sources:
-  - https://github.com/thomst08/requestrr
   - https://github.com/truecharts/charts/tree/master/charts/stable/requestrr
+  - https://github.com/thomst08/requestrr
   - https://hub.docker.com/r/thomst08/requestrr
 type: application
-version: 12.0.1
+version: 12.0.2
